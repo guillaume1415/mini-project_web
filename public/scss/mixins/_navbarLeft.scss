@@ -1,0 +1,39 @@
+@import "../variable";
+@mixin navbar($color: $color_primary) {
+    // NAVBAR
+    &__nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        // Décalage du nav avec le titre
+        margin-left: 13%;
+    }
+
+    // NAVBAR TITLE
+    &__title {
+        color: $color;
+    }
+
+    // 
+    &__nav--item {
+        color: $color;
+        line-height: 2;
+    }
+
+    // style des lien 
+    &__nav--link {
+        text-decoration: none;
+        color: $color;
+        margin-left: 30px;
+    }
+
+    &__nav--link:hover {
+        color: darken($color_primary, 5%);
+    }
+
+    //  lien avec un icon
+    &__nav--icon+&__nav--link {
+        margin-left: 10px;
+    }
+}

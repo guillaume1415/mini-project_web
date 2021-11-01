@@ -1,0 +1,45 @@
+@import 'variable';
+@font-face {
+	font-family: "Francois One";
+	src: url('../font/Francois_One/FrancoisOne-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Didact Gothic";
+	src: url('../font/Didact_Gothic/DidactGothic-Regular.ttf');
+}
+
+// a {
+//     color: #e78300;
+// }
+
+body {
+    font-family: $primary_font_text;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $primary_font;
+    font-weight: 800;
+}
+
